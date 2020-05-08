@@ -56,12 +56,31 @@ body {
 }
 
 .container .dogs__image img {
+  position: relative;
   max-width: 100%;
   height: auto;
   border-radius: 10%;
   border: 7px solid white;
 }
-
+.container .dogs__mouseover {
+  position: absolute;
+}
+.imageText {
+  color: #f16820;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+  opacity: 0.9;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .container .dogs__meta {
   text-align: center;
   margin-top: 15px;
