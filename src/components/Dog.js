@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 function Dogs({ dogs }) {
   const [isShown, setIsShown] = useState(false);
+  const [isHearted, setIsHearted] = useState(false)
 
   return (
     <div className="dogs">
@@ -23,6 +24,9 @@ function Dogs({ dogs }) {
           </div>
         )}
       </div>
+       <div className='dogs__likes'>
+        <span onClick={() => setIsHearted(!isHearted)}> Like</span><span>{isHearted ? '❤': '♡ '}</span>
+      </div> 
     </div>
   );
 }

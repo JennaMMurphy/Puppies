@@ -9,6 +9,7 @@ const GET_DOGS = gql`
       color
       imageUrl
       description
+      likes
     }
   }
 `;
