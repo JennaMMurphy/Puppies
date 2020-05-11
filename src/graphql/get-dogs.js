@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const GET_DOGS = gql`
+export const GET_DOGS = gql`
   query dogs {
     dogs {
       key
@@ -14,4 +14,12 @@ const GET_DOGS = gql`
   }
 `;
 
-export default GET_DOGS;
+// commented out because I haven't quite figured muattions out yet lol
+// export const MUTATE_DOGS = gql`
+//   mutation likeDog($key: ID!) {
+//   likeDog(key: $key) {
+//     name
+//     likes
+//   }
+// }
+// `

@@ -5,6 +5,7 @@ function Dogs({ dogs }) {
   const [isHearted, setIsHearted] = useState(false)
 
   return (
+    
     <div className="dogs">
       <div className="dogs__name">
         <p>{dogs.name}</p>
