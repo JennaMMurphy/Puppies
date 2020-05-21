@@ -1,16 +1,6 @@
-body {
-  margin: 20px 0;
-  padding: 0 20px;
-  line-height: 1;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #202020;
-  background-color: #fbfbfb;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .container {
   display: flex;
-  max-width: 700px;
+  max-width: 100vw;
   margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,14 +11,14 @@ body {
 }
 
 .container .dogs {
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
   background-clip: border-box;
   border: 6px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background-image: url("https://image.freepik.com/free-vector/cute-seamless-pattern-with-cartoon-baby-dog-bone-kids-animal-blue-background_71374-240.jpg");
 }
 
@@ -53,7 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%
+  margin-bottom: 10px;
 }
 
 .container .dogs__image img {
@@ -71,9 +61,7 @@ body {
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
   background-color: white;
   font-weight: bold;
-  font-size: 20px;
-  margin: 0;
-  padding: 5px 20px;
+  font-size: 75%;
   border-radius: 5px;
   opacity: 0.9;
   text-align: center;
@@ -111,10 +99,7 @@ body {
   padding: 7px;
   font-weight: 700;
   color: #fff;
-  padding-left: 10px;
-  padding-right: 10px;
   font-size: 20px;
-  margin-bottom: 10px;
   text-align: center;
   line-height: 15px;
 }
@@ -131,6 +116,22 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 769px) {
+  .imageText {
+    font-size: 100%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .container .dogs {
+    max-width: 60vw;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
